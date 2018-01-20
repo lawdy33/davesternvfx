@@ -1,0 +1,160 @@
+html {
+  font-family: 'Open Sans', 'verdana', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  width: 1080px;
+  text-align:  center;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Nav Bar */
+
+.active {
+  font-weight: bold;
+}
+
+.navbar {
+  padding: 14px 0;
+  border-bottom: 1px solid white;
+}
+
+.navbar-nav {
+    margin: 0 auto;
+    display: table;
+    table-layout: auto;
+    float: none;
+    width: 100%;
+}
+
+.navbar-nav>li {
+    display: table-cell;
+    float: none;
+    text-align: center;
+    font-size:  18px;
+}
+
+.navbar-nav li a {
+  color: white !important;
+}
+
+.navbar-nav li a:hover {
+  text-decoration: underline; !important;
+  text-shadow: 2px 2px 8px white;
+}
+
+/*Homepage - Dave Stern */
+
+.homepage {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 8rem;
+}
+
+.homepage h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: rgb(184,184,184);
+}
+
+.homepage p {
+  color: rgb(184,184,184);
+  font-size: 2rem;
+  font-family: 'roboto', 'open sans', sans-sans-serif;
+}
+
+/* Glasses Animation */
+
+@keyframes reveal {
+  0% {
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#reveal {
+  animation: 2s ease-out 1s 1 reveal;
+  background: black;
+}
+
+
+.image-container {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.enter h3 {
+
+  text-decoration: underline;
+  font-size: 24px;
+  /*font-weight: 200;*/
+  word-spacing: 4rem;
+
+
+}
+
+.enter h3 a {
+    color: white !important;
+}
+
+.enter h3 a:hover {
+  text-decoration: underline; !important;
+  text-shadow: 2px 2px 8px white;
+  font-weight: bold;
+}
+
+#enter {
+  margin-bottom: 5rem;
+}
+
+.enter p {
+    color: rgb(60,60,60);
+    font-size: 16px;
+}
+
+/* Jumbotron - Carousel */
+
+.glasses {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  height: 140px;
+  width: 100%;
+  border: none;
+  font-family: "open sans";
+  background-color: black;
+}
+
+.black {
+  background-image: url("../images/black.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.dave {
+  background-image: url("../images/davestern.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
