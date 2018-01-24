@@ -241,7 +241,7 @@ html {
   font-size: 30px;
 }
 
-/*iframe {
+/*video {
     margin-top: 2rem;
     width: 100%;
     height: auto;
@@ -249,6 +249,11 @@ html {
 }*/
 
 #montagefoot p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 /* */
+.copyright {
+  color: rgb(60,60,60);
+  font-size: 12px;
+  margin: 0.5rem;
+}
