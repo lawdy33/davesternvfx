@@ -33,9 +33,10 @@ html {
 .navbar-nav {
     margin: 0 auto;
     display: table;
-    table-layout: auto;
+    table-layout: fixed;
     float: none;
     width: 100%;
+
 }
 
 .navbar-nav>li {
@@ -43,6 +44,7 @@ html {
     float: none;
     text-align: center;
     font-size:  18px;
+
 }
 
 .navbar-nav li a {
@@ -92,12 +94,12 @@ html {
 }
 
 
-.image-container {
+.image {
   width: 100%;
   margin: 2rem 0;
 }
 
-.image-container img {
+.image img {
   width: 100%;
   height: auto;
 }
@@ -131,6 +133,11 @@ html {
     font-size: 16px;
 }
 
+.enter p a {
+  color: rgb(60,60,60);
+  font-size: 16px;
+}
+
 /* Jumbotron - Carousel */
 
 .glasses {
@@ -157,4 +164,90 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* Productions Page */
+
+.productions {
+  margin-top: 2rem;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.productions h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  color: rgb(184,184,184);
+}
+
+.productions h2 {
+  color: rgb(184,184,184);
+  font-size: 2.5rem;
+  font-family: 'roboto', 'open sans', sans-sans-serif;
+}
+
+.productions a {
+  color: white;
+}
+
+.productions h3 {
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  max-width: 98%;
+  height: auto;
+}
+
+.montage p {
+  margin-top: -36px;
+  padding: 0;
+  letter-spacing: 8px;
+  color: rgb(184,184,184);
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.montage .image-container img {
+  margin: 0;
+  vertical-align: top !important;
+  line-height: 2px;
+}
+
+.montage .image-container a img {
+  margin: 0;
+}
+
+.image-container a img:hover {
+  border: 2px solid rgb(184,184,184);
+}
+
+.bottom {
+  margin-top: 0;
+}
+
+.montage a:hover {
+  text-decoration: none !important;
+  color: rgb(184,184,184);
+}
+
+/* Montage Page */
+.montage h1 {
+  letter-spacing: 14px;
+}
+
+.montage h2 {
+  font-size: 30px;
+}
+
+/*iframe {
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+}*/
+
+#montagefoot p {
+  margin-top: 1rem;
 }
