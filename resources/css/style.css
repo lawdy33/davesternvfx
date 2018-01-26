@@ -1,3 +1,11 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+/*html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}*/
+
 html {
   font-family: 'Open Sans', 'verdana', sans-serif;
   font-size: 14px;
@@ -16,20 +24,12 @@ body {
     width: 769px;
   }
 }
-@media only screen and (max-width: 768px) {
-  html, body {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
-}
 
-/* apply a natural box layout model to all elements, but allowing components to change */
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* Nav Bar */
@@ -144,6 +144,7 @@ html {
 
 #enter {
   margin-bottom: 5rem;
+  max-width: 100%;
 }
 
 .enter p {
@@ -384,19 +385,6 @@ html {
   color: rgb(184,184,184);
 }
 
-/*.video-container {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.video-container iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}*/
 
 .embed-container {
   position: relative;
@@ -424,4 +412,37 @@ html {
     font-size: 0.75rem;
   }
 
+}
+
+/* Credit Pages */
+
+.headline {
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+
+}
+
+.credits {
+  text-align: left;
+  line-height: 13px;
+}
+
+.credits p a {
+  color: white;
+  text-decoration: underline;
+}
+
+.credits p a:hover {
+  text-shadow: 2px 2px 8px white;
+}
+
+@media only screen and (max-width: 768px) {
+  .credits p {
+    font-size: 12px;
+  }
+
+  .headline h3 {
+    font-size: 18px;
+  }
 }
