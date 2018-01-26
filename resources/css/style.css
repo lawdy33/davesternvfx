@@ -1,4 +1,5 @@
 /* apply a natural box layout model to all elements, but allowing components to change */
+
 /*html {
   box-sizing: border-box;
 }
@@ -16,7 +17,7 @@ body {
   color: white;
   margin: 0 auto;
   width: 1080px;
-  text-align:  center;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1079px) and (min-width: 769px) {
@@ -44,20 +45,18 @@ body {
 }
 
 .navbar-nav {
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float: none;
-    width: 100%;
-
+  margin: 0 auto;
+  display: table;
+  table-layout: fixed;
+  float: none;
+  width: 100%;
 }
 
 .navbar-nav>li {
-    display: table-cell;
-    float: none;
-    text-align: center;
-    font-size:  18px;
-
+  display: table-cell;
+  float: none;
+  text-align: center;
+  font-size: 18px;
 }
 
 .navbar-nav li a {
@@ -65,16 +64,16 @@ body {
 }
 
 .navbar-nav li a:hover {
-  text-decoration: underline; !important;
+  text-decoration: underline;
+   !important;
   text-shadow: 2px 2px 8px white;
 }
 
 @media only screen and (max-width: 768px) {
   .navbar-nav>li {
-      font-size:  14px;
+    font-size: 14px;
+  }
 }
-}
-
 
 /*Homepage - Dave Stern */
 
@@ -88,11 +87,11 @@ body {
 .homepage h1 {
   font-size: 40px;
   letter-spacing: 2px;
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
 }
 
 .homepage p {
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
   font-size: 2rem;
   font-family: 'roboto', 'open sans', sans-sans-serif;
 }
@@ -108,11 +107,11 @@ body {
     transform: translateX(0);
   }
 }
+
 #reveal {
   animation: 2s ease-out 1s 1 reveal;
   background: black;
 }
-
 
 .image {
   width: 100%;
@@ -125,7 +124,6 @@ body {
 }
 
 .enter h3 {
-
   text-decoration: underline;
   font-size: 24px;
   /*font-weight: 200;*/
@@ -133,11 +131,12 @@ body {
 }
 
 .enter h3 a {
-    color: white !important;
+  color: white !important;
 }
 
 .enter h3 a:hover {
-  text-decoration: underline; !important;
+  text-decoration: underline;
+   !important;
   text-shadow: 2px 2px 8px white;
   font-weight: bold;
 }
@@ -148,12 +147,12 @@ body {
 }
 
 .enter p {
-    color: rgb(60,60,60);
-    font-size: 16px;
+  color: rgb(60, 60, 60);
+  font-size: 16px;
 }
 
 .enter p a {
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
   font-size: 16px;
 }
 
@@ -161,22 +160,25 @@ body {
   .homepage h1 {
     font-size: 36px;
   }
-    .homepage p {
-      font-size: 1.5rem;
-    }
+  .homepage p {
+    font-size: 1.5rem;
   }
+}
 
 @media only screen and (max-width: 768px) {
   .homepage h1 {
     font-size: 18px;
   }
+
   .homepage p {
     font-size: 1rem;
   }
+
   .enter h3 a {
     font-size: 20px;
     word-spacing: 2rem;
   }
+
   .homepage {
     margin-bottom: 2rem;
   }
@@ -184,6 +186,11 @@ body {
   .enter p {
     font-size: 12px;
   }
+
+  #enter {
+    margin-bottom: 1.5rem;
+  }
+
 }
 
 /* Jumbotron - Carousel
@@ -214,7 +221,6 @@ body {
   background-size: cover;
 }*/
 
-
 /* PRODUCTIONS Page */
 
 .productions {
@@ -227,11 +233,11 @@ body {
 .productions h1 {
   font-size: 40px;
   letter-spacing: 2px;
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
 }
 
 .productions h2 {
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
   font-size: 2.5rem;
   font-family: 'roboto', 'open sans', sans-sans-serif;
 }
@@ -249,7 +255,6 @@ body {
   margin-bottom: 0;
 }
 
-
 .image-container img {
   max-width: 100%;
   height: auto;
@@ -259,7 +264,7 @@ body {
 .montage p {
   padding: 0;
   letter-spacing: 8px;
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
   font-size: 30px;
   margin-bottom: 0;
 }
@@ -276,7 +281,7 @@ body {
 }
 
 .image-container a img:hover {
-  border: 2px solid rgb(184,184,184);
+  border: 2px solid rgb(184, 184, 184);
 }
 
 .thumb .image-container {
@@ -290,7 +295,7 @@ body {
 
 .montage a:hover {
   text-decoration: none !important;
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
 }
 
 .small {
@@ -301,33 +306,26 @@ body {
   .productions h1 {
     font-size: 30px;
   }
-
   .productions h2 {
     font-size: 2rem;
   }
-
   .productions h3 a {
     font-size: 16px;
   }
   .montage p {
     font-size: 20px;
   }
-
-
 }
 
 @media only screen and (max-width: 768px) {
   .productions h1 {
     font-size: 24px;
   }
-
   .productions h2 {
     font-size: 1.5rem;
   }
-
   .productions h3 a {
     font-size: 14px;
-
   }
   .montage p {
     font-size: 14px;
@@ -336,6 +334,7 @@ body {
 }
 
 /* Montage Page */
+
 .montage h1 {
   letter-spacing: 14px;
 }
@@ -356,12 +355,19 @@ body {
 }
 
 .copyright {
-  color: rgb(60,60,60);
+  color: rgb(60, 60, 60);
   font-size: 12px;
-  margin: 0.5rem;
+  margin-top: 2rem;
+  line-height: 5px;
 }
 
-
+@media only screen and (max-width: 768px) {
+  .copyright {
+    font-size: 9px;
+    margin-top: 2rem;
+    line-height: 9px;
+  }
+}
 
 /* Video Pages */
 
@@ -379,12 +385,11 @@ body {
 }
 
 .btn {
-  background-color: rgb(60,60,60);
+  background-color: rgb(60, 60, 60);
   margin: 0 0.5rem;
   border-color: white;
-  color: rgb(184,184,184);
+  color: rgb(184, 184, 184);
 }
-
 
 .embed-container {
   position: relative;
@@ -407,11 +412,9 @@ body {
     margin-top: 1rem;
     font-size: 1.5rem;
   }
-
   .videos p {
     font-size: 0.75rem;
   }
-
 }
 
 /* Credit Pages */
@@ -420,7 +423,6 @@ body {
   margin: 0 auto;
   text-align: center;
   padding: 1rem 0;
-
 }
 
 .credits {
@@ -441,7 +443,6 @@ body {
   .credits p {
     font-size: 12px;
   }
-
   .headline h3 {
     font-size: 18px;
   }
