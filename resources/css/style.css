@@ -96,9 +96,13 @@ body {
   font-family: 'roboto', 'open sans', sans-sans-serif;
 }
 
+#glasses {
+  display: none;
+}
+
 /* Glasses Animation */
 
-@keyframes reveal {
+/*@keyframes reveal {
   0% {
     transform: translateX(-100%);
     visibility: hidden;
@@ -111,7 +115,7 @@ body {
 #reveal {
   animation: 2s ease-out 1s 1 reveal;
   background: black;
-}
+}*/
 
 .image {
   width: 100%;
@@ -356,7 +360,7 @@ body {
 
 .copyright {
   color: rgb(60, 60, 60);
-  font-size: 12px;
+  font-size: 10px;
   margin-top: 2rem;
   line-height: 5px;
 }
