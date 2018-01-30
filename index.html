@@ -78,7 +78,7 @@
     ];
 
     var index = Math.floor(Math.random() * videos.length);
-    if (navigator.maxTouchPoints > 0) {
+    if (window.matchMedia("(max-width: 768px)").matches) {
       var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
         '?autoplay=1&mute=0" frameborder="0" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
       document.write(html);
@@ -88,9 +88,6 @@
       document.write(html);
     }
   </script>
-
-
-<!--if (window.matchMedia("(max-width: 768px)").matches) {     controls="false" autoplay="autoplay" -->
 
 
   <div class="container enter">
