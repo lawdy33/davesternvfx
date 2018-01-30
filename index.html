@@ -68,7 +68,6 @@
     document.write(html);
   </script>-->
 
-
   <script>
     var videos = [
       '156034926',
@@ -79,17 +78,19 @@
     ];
 
     var index = Math.floor(Math.random() * videos.length);
-    if (window.matchMedia("(max-width: 768px)").matches) {
+    if (navigator.maxTouchPoints > 0) {
       var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
-        '?autoplay=1&mute=0" frameborder="0" controls="false" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
+        '?autoplay=1&mute=0" frameborder="0" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
       document.write(html);
     } else {
       var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
-        '?autoplay=1&background=1&mute=0" frameborder="0" controls="false" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
+        '?autoplay=1&background=1&mute=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
       document.write(html);
     }
   </script>
 
+
+<!--if (window.matchMedia("(max-width: 768px)").matches) {     controls="false" autoplay="autoplay" -->
 
 
   <div class="container enter">
