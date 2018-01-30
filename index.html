@@ -51,9 +51,9 @@
     <p>How we see ourselves often depends on what we see... visually</p>
   </div>
 
-  <!-- Randomize Videos -->
+  <!-- Randomize Videos Original (No Mobile If/Then)-->
 
-  <script>
+  <!--<script>
     var videos = [
       '156034926',
       '151975941',
@@ -66,8 +66,29 @@
     var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
       '?autoplay=1&background=1&mute=0" frameborder="0" controls="false" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
     document.write(html);
-  </script>
+  </script>-->
 
+
+  <script>
+    var videos = [
+      '156034926',
+      '151975941',
+      '152797444',
+      '152782784',
+      '152512357'
+    ];
+
+    var index = Math.floor(Math.random() * videos.length);
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
+        '?autoplay=1&mute=0" frameborder="0" controls="false" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
+      document.write(html);
+    } else {
+      var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
+        '?autoplay=1&background=1&mute=0" frameborder="0" controls="false" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
+      document.write(html);
+    }
+  </script>
 
 
 
