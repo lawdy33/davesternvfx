@@ -22,7 +22,9 @@
       $('#glasses').fadeIn(4006);
     });
   </script>
+
 </head>
+
 <body>
 
 
@@ -43,11 +45,31 @@
   <div class="container homepage">
     <h1>Dave Stern</h1>
     <h1>Visual Effects Artist</h1>
-    <div id="reveal" class="image">
-      <img id="glasses" alt="Dave Stern" src="./resources/images/eyeimage.jpg">
+    <div id="reveal" class="glasses">
+      <img alt="Dave Stern" src="./resources/images/eyeimage.jpg">
     </div>
     <p>How we see ourselves often depends on what we see... visually</p>
   </div>
+
+  <!-- Randomize Videos -->
+
+  <script>
+    var videos = [
+      '156034926',
+      '151975941',
+      '152797444',
+      '152782784',
+      '152512357'
+    ];
+
+    var index = Math.floor(Math.random() * videos.length);
+    var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
+      '?autoplay=1&background=1&mute=0" frameborder="0" controls="false" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
+    document.write(html);
+  </script>
+
+
+
 
   <div class="container enter">
     <h3><a href="productions.html">E N T E R</a></h3>
