@@ -97,8 +97,46 @@ body {
   font-family: 'roboto', 'open sans', sans-sans-serif;
 }
 
+.homepage .embed-container {
+  padding-bottom: 10%;
+  padding-top: 0;
+  height: 198px;
+}
+
+
+.homepage .embed-container iframe, .embed-container object, .embed-container embed {
+  height: 198px;
+}
+
 #glasses {
   display: none;
+}
+
+/* Media Queries to fit Video player */
+
+@media only screen and (max-width: 1079px) and (min-width: 769px) {
+  .homepage .embed-container {
+    padding-bottom: 10%;
+    height: 128px;
+  }
+
+
+  .homepage .embed-container iframe, .embed-container object, .embed-container embed {
+    height: 128px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .homepage .embed-container {
+    padding-bottom: 5%;
+    height: 90px;
+  }
+
+
+  .homepage .embed-container iframe, .embed-container object, .embed-container embed {
+    height: 90px;
+  }
+
 }
 
 /* Glasses Animation */
