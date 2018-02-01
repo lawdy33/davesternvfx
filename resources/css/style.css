@@ -86,30 +86,36 @@ body {
 }
 
 .homepage h1 {
-  font-size: 40px;
-  letter-spacing: 2px;
+  font-size: 48px;
+  letter-spacing: 4px;
   color: rgb(184, 184, 184);
 }
 
 .homepage p {
   color: rgb(184, 184, 184);
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: 'roboto', 'open sans', sans-sans-serif;
+  margin-bottom: 4rem;
 }
 
 .homepage .embed-container {
   padding-bottom: 10%;
   padding-top: 0;
-  height: 198px;
+  height: 150px;
 }
 
 
 .homepage .embed-container iframe, .embed-container object, .embed-container embed {
-  height: 198px;
+  height: 75%;
+  width: 100%;
 }
 
 #glasses {
   display: none;
+}
+
+#visually {
+    display: none;
 }
 
 /* Media Queries to fit Video player */
@@ -207,7 +213,7 @@ body {
 
 @media only screen and (max-width: 1079px) and (min-width: 769px) {
   .homepage h1 {
-    font-size: 36px;
+    font-size: 40px;
   }
   .homepage p {
     font-size: 1.5rem;
@@ -216,7 +222,8 @@ body {
 
 @media only screen and (max-width: 768px) {
   .homepage h1 {
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
   }
   .homepage p {
     font-size: 1rem;

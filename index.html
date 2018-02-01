@@ -17,11 +17,11 @@
   <meta property="og:image" content="">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- Fade In Image -->
-  <!--<script type="text/javascript">
+  <script type="text/javascript">
     $(document).ready(function() {
-      $('#glasses').fadeIn(4006);
+      $('#visually').fadeIn(10500);
     });
-  </script>-->
+  </script>
 
 </head>
 
@@ -34,21 +34,23 @@
     <div class="container">
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="productions.html">Productions</a></li>
-        <li><a href="montage.html">Montage</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="play.html">Play</a></li>
       </ul>
     </div>
   </nav>
 
   <!-- Dave Stern title -->
 
+  <!-- Randomize Videos Original (No Mobile If/Then)-->
+
   <div class="container homepage">
-    <h1>Dave Stern</h1>
-    <h1>Visual Effects Artist</h1>
+    <h1>Dave Stern Visual Effects Artist</h1>
     <script>
       var videos = [
         '253356744',
-        '253356756'
+        '253356756',
+        '253703713'
       ];
 
       var index = Math.floor(Math.random() * videos.length);
@@ -65,50 +67,16 @@
     <!--<div id="reveal" class="glasses">
       <img alt="Dave Stern" src="./resources/images/eyeimage.jpg">
     </div>-->
-    <p>How we see ourselves often depends on what we see... visually</p>
+      <p id="visually">How we see ourselves often depends on what we see... visually</p>
   </div>
 
   <!-- Randomize Videos Original (No Mobile If/Then)-->
 
-  <!--<script>
-    var videos = [
-      '156034926',
-      '151975941',
-      '152797444',
-      '152782784',
-      '152512357'
-    ];
 
-    var index = Math.floor(Math.random() * videos.length);
-    var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
-      '?autoplay=1&background=1&mute=0" frameborder="0" controls="false" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
-    document.write(html);
-  </script>-->
-
-  <!--<script>
-    var videos = [
-      '156034926',
-      '151975941',
-      '152797444',
-      '152782784',
-      '152512357'
-    ];
-
-    var index = Math.floor(Math.random() * videos.length);
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
-        '?autoplay=1&background=0&mute=0&loop=0" frameborder="0" autoplay="autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
-      document.write(html);
-    } else {
-      var html = '<div class="embed-container"><iframe src="https://player.vimeo.com/video/' + videos[index] +
-        '?autoplay=1&background=1&mute=0&loop=0" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></div>';
-      document.write(html);
-    }
-  </script>-->
 
 
   <div class="container enter">
-    <h3><a href="productions.html">E N T E R</a></h3>
+    <h3><a href="work.html">E N T E R</a></h3>
     <img id="enter" src="./resources/images/shapeimage.png">
     <p>This site contains large multimedia files recommended for broadband connections</p>
     <p><a href="mailto:dave@davesternvfx.com">dave@davesternvfx.com</a></p>
