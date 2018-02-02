@@ -102,11 +102,12 @@ body {
   padding-bottom: 10%;
   padding-top: 0;
   height: 150px;
+  width: 1080px;
 }
 
 
 .homepage .embed-container iframe, .embed-container object, .embed-container embed {
-  height: 75%;
+  height: 80%;
   width: 100%;
 }
 
