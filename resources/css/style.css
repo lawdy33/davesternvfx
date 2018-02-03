@@ -78,20 +78,30 @@ body {
 
 /*Homepage - Dave Stern */
 
-.homepage {
+/*Modernizr*/
+
+.videoautoplay .althomepage {
+  display: none;
+}
+
+.no-videoautoplay .homepage {
+  display: none;
+}
+
+.homepage, .althomepage {
   margin-top: 2rem;
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
 }
 
-.homepage h1 {
+.homepage h1, .althomepage {
   font-size: 48px;
   letter-spacing: 4px;
   color: rgb(184, 184, 184);
 }
 
-.homepage p {
+.homepage p, .althomepage {
   color: rgb(184, 184, 184);
   font-size: 1.5rem;
   font-family: 'roboto', 'open sans', sans-sans-serif;
@@ -111,7 +121,7 @@ body {
   width: 100%;
 }
 
-#glasses {
+#reveal {
   display: none;
 }
 
@@ -169,8 +179,8 @@ body {
 }
 
 .glasses img {
-  height: auto;
-  width: 100%;
+  height: 75%;
+  width: auto;
   overflow: hidden;
 }
 
