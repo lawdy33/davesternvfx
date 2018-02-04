@@ -80,11 +80,11 @@ body {
 
 /*Modernizr*/
 
-.videoautoplay .althomepage {
+.no-touchevents .althomepage {
   display: none;
 }
 
-.no-videoautoplay .homepage {
+.touchevents .homepage {
   display: none;
 }
 
