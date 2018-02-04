@@ -216,7 +216,7 @@ body {
   .homepage h1, .althomepage h1 {
     font-size: 40px;
   }
-  .homepage p, .althomepage h1 {
+  .homepage p, .althomepage p {
     font-size: 1.5rem;
   }
 }
