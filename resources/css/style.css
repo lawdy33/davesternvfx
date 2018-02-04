@@ -223,27 +223,27 @@ body {
 
 
 @media only screen and (max-width: 1079px) and (min-width: 769px) {
-  .homepage h1 {
+  .homepage h1, .althomepage h1 {
     font-size: 40px;
   }
-  .homepage p {
+  .homepage p, .althomepage h1 {
     font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .homepage h1 {
+  .homepage h1, .althomepage h1 {
     font-size: 16px;
     letter-spacing: 1px;
   }
-  .homepage p {
+  .homepage p, .althomepage p {
     font-size: 1rem;
   }
   .enter h3 a {
     font-size: 20px;
     word-spacing: 2rem;
   }
-  .homepage {
+  .homepage, .althomepage {
     margin-bottom: 2rem;
   }
   .enter p {
