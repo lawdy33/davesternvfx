@@ -156,31 +156,17 @@ body {
 
 }
 
-/* Glasses Animation */
-
-/*@keyframes reveal {
-  0% {
-    transform: translateX(-100%);
-    visibility: hidden;
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-#reveal {
-  animation: 2s ease-out 1s 1 reveal;
-  background: black;
-}*/
-
 .glasses {
   width: 100%;
+  height: auto;
   margin: 1rem 0;
+  overflow: hidden;
 }
 
 .glasses img {
   height: 75%;
   width: auto;
+  max-width: 100%;
   overflow: hidden;
 }
 
