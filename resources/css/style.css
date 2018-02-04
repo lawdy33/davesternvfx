@@ -162,13 +162,13 @@ body {
 
 .glasses {
   max-width: 100%;
-  height: auto;
+    height: auto;
   margin: 1rem 0;
   overflow: hidden;
 }
 
 .glasses img {
-  height: auto;
+  height: 67%;
   max-width: 100%;
   overflow: hidden;
 }
