@@ -129,6 +129,10 @@ body {
     display: none;
 }
 
+#visual {
+    display: none;
+}
+
 /* Media Queries to fit Video player */
 
 @media only screen and (max-width: 1079px) and (min-width: 769px) {
