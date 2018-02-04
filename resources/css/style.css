@@ -168,8 +168,7 @@ body {
 }
 
 .glasses img {
-  height: 75%;
-  width: auto;
+  height: auto;
   max-width: 100%;
   overflow: hidden;
 }
