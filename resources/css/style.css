@@ -95,13 +95,13 @@ body {
   margin-bottom: 1rem;
 }
 
-.homepage h1, .althomepage {
+.homepage h1, .althomepage h1 {
   font-size: 48px;
   letter-spacing: 4px;
   color: rgb(184, 184, 184);
 }
 
-.homepage p, .althomepage {
+.homepage p, .althomepage p {
   color: rgb(184, 184, 184);
   font-size: 1.5rem;
   font-family: 'roboto', 'open sans', sans-sans-serif;
