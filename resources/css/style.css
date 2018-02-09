@@ -21,28 +21,16 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 1079px) and (min-width: 769px) {
-  body {
-    width: 769px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  body {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
 /* Nav Bar */
 
 .active {
   font-weight: bold;
 }
 
-.navbar {
-  padding: 14px 0;
+.navbar-nav, .nav {
+  padding: 10px 0;
   border-bottom: 1px solid white;
+  font-size: 18px;
 }
 
 .navbar-nav {
@@ -60,23 +48,20 @@ body {
   font-size: 18px;
 }
 
-.navbar-nav li a {
+.navbar-nav li a, .nav a {
   color: white !important;
 }
 
-.navbar-nav li a:hover {
+.navbar-nav li a:hover, .nav a:hover {
   text-decoration: underline;
-   !important;
   text-shadow: 2px 2px 8px white;
 }
 
 @media only screen and (max-width: 768px) {
-  .navbar-nav>li {
+  .navbar-nav>li, .nav a {
     font-size: 14px;
   }
 }
-
-/*Homepage - Dave Stern */
 
 /*Modernizr*/
 
@@ -88,22 +73,26 @@ body {
   display: none;
 }
 
+/* End Modernizr*/
+
+/*Homepage - Dave Stern */
+
 .homepage, .althomepage {
-  margin-top: 2rem;
-  width: 100%;
-  height: auto;
-  margin-bottom: 1rem;
+  padding: 0;
+  max-width: 1080px;
+  text-align: center !important;
 }
 
 .homepage h1, .althomepage h1 {
-  font-size: 48px;
+  font-size: 5.07rem;
   letter-spacing: 4px;
   color: rgb(184, 184, 184);
+  margin-top: 2rem;
 }
 
 .homepage p, .althomepage p {
   color: rgb(184, 184, 184);
-  font-size: 1.5rem;
+  font-size: 2.72rem;
   font-family: 'roboto', 'open sans', sans-sans-serif;
   margin-bottom: 4rem;
 }
@@ -115,7 +104,6 @@ body {
   width: 1080px;
 }
 
-
 .homepage .embed-container iframe, .embed-container object, .embed-container embed {
   height: 80%;
   width: 100%;
@@ -126,11 +114,11 @@ body {
 }
 
 #visually {
-    display: none;
+  display: none;
 }
 
 .visual {
-    display: none;
+  display: none;
 }
 
 /* Media Queries to fit Video player */
@@ -140,8 +128,6 @@ body {
     padding-bottom: 10%;
     height: 128px;
   }
-
-
   .homepage .embed-container iframe, .embed-container object, .embed-container embed {
     height: 128px;
   }
@@ -152,24 +138,19 @@ body {
     padding-bottom: 5%;
     height: 90px;
   }
-
-
   .homepage .embed-container iframe, .embed-container object, .embed-container embed {
     height: 90px;
   }
-
 }
 
 .glasses {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
   margin: 1rem 0;
   overflow: hidden;
 }
 
 .glasses img {
-  height: 100px;
-  width: auto;
+  height: auto;
   max-width: 100%;
   overflow: hidden;
 }
@@ -211,24 +192,69 @@ body {
   font-size: 16px;
 }
 
+/* Media Queries for Homepage headings */
 
-@media only screen and (max-width: 1079px) and (min-width: 769px) {
+@media only screen and (max-width: 1079px) and (min-width: 900px) {
+  body {
+    width: 900px;
+  }
+  .homepage, .althomepage {
+    max-width: 900px;
+  }
   .homepage h1, .althomepage h1 {
-    font-size: 40px;
+    font-size: 4.12rem;
   }
   .homepage p, .althomepage p {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
+  }
+}
+
+@media only screen and (max-width: 899px) and (min-width: 769px) {
+  body {
+    width: 769px;
+  }
+  .homepage, .althomepage {
+    max-width: 769px;
+  }
+  .homepage h1, .althomepage h1 {
+    font-size: 3.4rem;
+  }
+  .homepage p, .althomepage p {
+    font-size: 1.95rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  body {
+    width: 600px;
+  }
+  .homepage, .althomepage {
+    max-width: 600px;
+  }
+  .homepage h1, .althomepage h1 {
+    font-size: 2.4rem;
+  }
+  .homepage p, .althomepage p {
+    font-size: 1.45rem;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .homepage h1, .althomepage h1 {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+  .homepage p, .althomepage p {
+    font-size: .9rem;
+    margin-bottom: 1rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .homepage h1, .althomepage h1 {
-    font-size: 16px;
-    letter-spacing: 1px;
-  }
-  .homepage p, .althomepage p {
-    font-size: 1rem;
-  }
   .enter h3 a {
     font-size: 20px;
     word-spacing: 2rem;
