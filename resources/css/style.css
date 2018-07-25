@@ -163,13 +163,13 @@ body {
 }
 
 .enter h3 a {
-  color: white !important;
+  color: gray !important;
 }
 
 .enter h3 a:hover {
   text-decoration: underline;
    !important;
-  text-shadow: 2px 2px 8px white;
+  text-shadow: 2px 2px 8px gray;
   font-weight: bold;
 }
 
